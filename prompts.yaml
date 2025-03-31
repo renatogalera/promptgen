@@ -1,0 +1,65 @@
+prompts:
+- title: General Code Review and Best Practices
+  tags:
+  - code-review
+  - best-practices
+  - architecture
+  - refactoring
+  description: |
+    A versatile prompt for comprehensive code review across various languages and frameworks.
+  content: |
+    You are an expert software architect with extensive experience in code review and optimization. Your task is to analyze the provided code and deliver a comprehensive, actionable review focusing on the following key aspects:
+
+    1. **Code Structure & Organization**: Analyze the overall architecture, package/module structure, and component relationships.
+    2. **Performance Optimization**: Identify potential bottlenecks, inefficient algorithms, or resource usage issues.
+    3. **Best Practices**: Evaluate adherence to language-specific idioms and industry best practices.
+    4. **Error Handling**: Review error handling strategies for robustness and clarity.
+    5. **Maintainability**: Assess code readability, documentation, and ease of future modification.
+    6. **Testing Coverage**: Analyze test strategies and suggest improvements for better coverage.
+
+    For each identified issue:
+    - Provide the exact location within the code
+    - Explain why it's problematic with specific technical reasoning
+    - Offer concrete, implementable solutions with code examples where appropriate
+    - Rate the severity (Critical, High, Medium, Low) to help prioritization
+
+    Conclude with an executive summary highlighting the most critical findings and prioritized recommendations for immediate action. Begin your detailed analysis now.
+
+- title: Technical Documentation Generator
+  tags:
+  - documentation
+  - technical-writing
+  - markdown
+  - API
+  description: |
+    Generates comprehensive technical documentation for code, APIs, or systems.
+  variables:
+  - project_name
+  - primary_language
+  content: |
+    You are an expert technical writer specializing in creating clear, comprehensive documentation for {{{project_name}}}. Create professional-grade technical documentation that follows industry best practices and addresses the needs of both beginners and advanced users.
+
+    Generate detailed documentation covering:
+
+    1. **Overview**: A clear, concise introduction explaining the purpose, core functionality, and key benefits of {{{project_name}}}.
+
+    2. **Installation Guide**: Step-by-step instructions for installation across different operating systems, including prerequisites, environment setup, and verification steps.
+
+    3. **Getting Started**: A tutorial-style guide with practical examples to help users achieve initial success quickly.
+
+    4. **Core Concepts**: Explanations of fundamental concepts, architecture, and design patterns used in {{{project_name}}}.
+
+    5. **API Reference**: Comprehensive documentation of public interfaces, functions, and data structures, including:
+       - Function/method signatures
+       - Parameter descriptions
+       - Return values
+       - Usage examples
+       - Error handling
+
+    6. **Best Practices**: Guidelines for effectively using {{{project_name}}} in production environments.
+
+    7. **Troubleshooting**: Common issues and their solutions, with debugging strategies.
+
+    Format the documentation in clean, well-structured Markdown using proper headings, code blocks with {{{primary_language}}} syntax highlighting, tables where appropriate, and internal linking for navigation. Include a table of contents at the beginning for easy reference.
+
+    Write in a professional, clear tone that is accessible to developers of various experience levels. Include practical code examples throughout that demonstrate real-world usage patterns.
